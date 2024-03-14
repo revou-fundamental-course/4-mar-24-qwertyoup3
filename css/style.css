@@ -1,0 +1,416 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* body */
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #6497d6;
+}
+
+/* header */
+.header{
+    text-align: left;
+    width: 100%;
+    padding: 24px;
+}
+
+.header>h1{
+    color: #f8f2eb;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.header>p{
+    color: #f8f2eb;
+}
+
+/* Display Style */
+.container {
+    display: flex;
+}
+
+.box{
+    text-align: center;
+    width: 100%;
+    padding: 24px;
+}
+
+.container-form {
+    border-radius: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.container-form>h2 {
+    color: #b3d7ed;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container-form>div {
+    padding: 8px;
+}
+
+.container-result {
+    border-radius: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 25px;
+}
+
+.container-result>h2 {
+    color: #b3d7ed;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px 0;
+    font-size: 30px;
+}
+
+.explain {
+    font-size: 15px;
+    color: #f8f2eb;
+    text-align: justify;
+    padding-top: 10px 15px;
+    padding-bottom: 10px;
+}
+
+.input {
+    background: rgb(242, 240, 240);
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#age.text-input{
+    background: rgb(242, 240, 240);
+}
+  
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6497d6;
+    margin-bottom: 20px;
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6497d6;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+  
+.inputW {
+    background: rgb(242, 240, 240);
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+  
+.inputW label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6497d6;
+    margin-bottom: 20px;
+}
+
+.inputW input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6497d6;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+#weight{
+    background: rgb(242, 240, 240);
+}
+  
+.inputH {
+    background: rgb(242, 240, 240);
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+  
+.inputH label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #6497d6;
+    margin-bottom: 20px;
+}
+  
+.inputH input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6497d6;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+}
+
+#height{
+    background: rgb(242, 240, 240);
+}
+  
+button.calculate {
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #ffffff;
+    background: #b3d7ed;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+}
+
+button.calculate:hover {
+    background: #6497d6;
+}
+  
+.container-result {
+    padding: 10px 20px;
+}
+
+.container-result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #6497d6;
+    margin-bottom: 15px;
+}
+
+.container-result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #6497d6;
+    background-color: rgb(242, 240, 240);
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+
+#comment {
+    color: #6497d6;
+    font-weight: 800;
+}
+  
+.comment {
+    display: none;
+    border: dashed 1px;
+    border-radius: 4px;
+    padding: 5px;
+    color:#b3d7ed;
+}
+
+.comment>p {
+    color: #b3d7ed
+}
+  
+.footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 15px;
+}
+  
+.footer-text {
+    text-decoration: none;
+    color: #f8f2eb;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    transition: all 0.5;
+}
+  
+.footer-text:hover {
+    color: #b3d7ed;
+}
+  
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: rgb(242, 240, 240);
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+  
+ /* Style Radio */
+.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #6497d6;
+    font-family: "Nunito", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default radio button */
+.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+  
+/* On mouse-over, add a grey background color */
+.gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+/* When the radio button is checked, add a blue background */
+.gender .container input:checked ~ .checkmark {
+    background-color: #6497d6;
+}
+  
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the indicator (dot/circle) when checked */
+.gender .container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the indicator (dot/circle) */
+.gender .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+/* END Style Radio */
+  
+.containerHW {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #6497d6; 
+    padding-top: 300px;
+}
+  
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: #393c76 -1px 2px 2px 1px;
+}
+  
+#modalText {
+    padding-top: 8px;
+    padding-right: 5px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    color: #6497d6;
+}
+  
+.modal-wrong {
+    border: 2px solid red;
+}
+  
+.modal-correct {
+    border: 2px solid green;
+}
+  
+/* Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+  
+.close:hover {
+    color: #aaaaaa;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .input label {
+      font-size: 18px;
+    }
+  
+    .inputH label,
+    .inputW label {
+      font-size: 14px;
+    }
+  
+    .input input,
+    .inputH input,
+    .inputW input {
+      font-size: 24px;
+    }
+  
+    .modal-content {
+      width: 380px;
+    }
+  }
+
